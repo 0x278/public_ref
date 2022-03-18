@@ -1,0 +1,99 @@
+╔══════ EXAMPLE ENDPOINT ════════╗
+HTTPS GET https://www.pixlet.studio/api/canvas/0x48f5a67af9fe30ccf4f40bb0ce3bb567fb3a846491fb1e1073736fd99060a56f
+
+╔══════ EXAMPLE PSEUDO RESPONSE JSON ════════╗
+canvas s = 0x48f5a67af9fe30ccf4f40bb0ce3bb567fb3a846491fb1e1073736fd99060a56f
+administrator s = 0x7F30c38f84550817E8c7B22482e4a0FcF22198a4
+preview s = https://www.pixlet.studio/images/0x48f5a67af9fe30ccf4f40bb0ce3bb567fb3a846491fb1e1073736fd99060a56f.png
+created_at d = 2021-03-12 09:04:12 UTC
+last_updated d = 2021-03-18 14:04:03 UTC
+last_published d = 2021-03-18 15:00:00 UTC
+pixel_set n = 8514
+pixel_updates n = 395514
+contributors[0]
+  address s = 0x2789e67d06FD17769d6A65d4c32f8fc0A26cF8c2
+  pixel_changes n = 8232
+  sessions[0]
+    pixel_updates n = 42758
+    started_at d = 2021-03-18 14:04:03 UTC
+  sessions[1]
+    pixel_updates n = 4736
+    started_at d = 2021-03-19 12:13:22 UTC
+  sessions[2]
+    pixel_updates n = 37262
+    started_at d = 2021-03-20 08:45:19 UTC
+  sessions[3]
+    pixel_updates n = 637
+    started_at d = 2021-03-21 23:32:59 UTC
+contributors[1]
+  address s = 0x7F30c38f84550817E8c7B22482e4a0FcF22198a4
+  pixel_updates n = 3325754
+  sessions[0]
+    pixel_updates n = 387282
+    started_at d = 2021-03-18 14:04:03 UTC
+  sessions[1]
+    pixel_updates n = 2938472
+    started_at d = 2021-03-19 12:13:22 UTC
+erc20_restriction s = 0x93827...
+whitelist[] s = 0x1234, 0x2345, 0x3456
+blacklist[] s = 0x9876, 0x8765
+
+╔══════ EXAMPLE RESPONSE JSON ════════╗
+{
+  "canvas": "0x48f5a67af9fe30ccf4f40bb0ce3bb567fb3a846491fb1e1073736fd99060a56f",
+  "administrator": "0x7F30c38f84550817E8c7B22482e4a0FcF22198a4",
+  "preview": "https://www.pixlet.studio/images/0x48f5a67af9fe30ccf4f40bb0ce3bb567fb3a846491fb1e1073736fd99060a56f.png",
+  "created_at": "2021-03-12T09:04:12.000Z",
+  "last_updated": "2021-03-18T14:04:03.000Z",
+  "last_published": "2021-03-18T15:00:00.000Z",
+  "pixel_set": 8514,
+  "pixel_updates": 395514,
+  "contributors": [
+    {
+      "address": "0x2789e67d06FD17769d6A65d4c32f8fc0A26cF8c2",
+      "pixel_changes": 8232,
+      "sessions": [
+        {
+          "pixel_updates": 42758,
+          "started_at": "2021-03-18T14:04:03.000Z"
+        },
+        {
+          "pixel_updates": 4736,
+          "started_at": "2021-03-19T12:13:22.000Z"
+        },
+        {
+          "pixel_updates": 37262,
+          "started_at": "2021-03-20T08:45:19.000Z"
+        },
+        {
+          "pixel_updates": 637,
+          "started_at": "2021-03-21T23:32:59.000Z"
+        }
+      ]
+    },
+    {
+      "address": "0x7F30c38f84550817E8c7B22482e4a0FcF22198a4",
+      "pixel_updates": 3325754,
+      "sessions": [
+        {
+          "pixel_updates": 387282,
+          "started_at": "2021-03-18T14:04:03.000Z"
+        },
+        {
+          "pixel_updates": 2938472,
+          "started_at": "2021-03-19T12:13:22.000Z"
+        }
+      ]
+    }
+  ],
+  "erc20_restriction": "0x93827...",
+  "whitelist": [
+    "0x1234",
+    "0x2345",
+    "0x3456"
+  ],
+  "blacklist": [
+    "0x9876",
+    "0x8765"
+  ]
+}
